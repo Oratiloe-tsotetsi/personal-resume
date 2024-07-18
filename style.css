@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;                                                                                                    
+  z-index: 100;
+}
+
+nav a{
+  font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 35px;
+    font-weight: 500;
+    
+   
+}
+
+nav li:hover,
+nav a.active {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  align-items: center;
+  
+}
+
+#navbar {
+  position: fixed;
+  transition: top 0.3s; /* Smooth transition for hiding/showing */
+  width: 100%;
+}
+
+.navbar-hidden{
+  top: -10px;
+}
+
+nav li{
+    display: inline-block;
+    
+}
+
+/* For screens smaller than 768px */
+@media screen and (max-width: 768px) {
+
+header{
+  animation: appearAnimation 5s forwards;
+  background-color: whitesmoke;
+  height: 100px;
+}
+
+nav li:hover{
+  background-color: gray;
+  
+}
+nav a:hover{
+  display: hidden;
+  
+}
+
+nav ul li {
+  text-decoration: none; /* Remove default underline */
+  position: relative; /* Required for positioning the underline */
+}
+
+ 
+  nav ul li {
+      display: block;
+  }
+}
+
+/* For screens smaller than 576px */
+@media screen and (max-width: 576px) {
+  nav ul li a {
+      padding: 10px;
+  }
+}
+
+
+
+
+#menu {
+  display: none;
+}
+
+@media (display-mode: 720×1280 ) {
+  #menu {
+    display: flex;
+  }
+}
+
+
+
+
+
+  section{
+    min-height: 100vh;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+
+  }
+  section:nth-child(odd){
+    background: #757F9A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #D7DDE8, #757F9A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    
+  }
+.imgbg{
+  background-image: url(Blue\ Gradient\ Modern\ Freelancer\ YouTube\ Thumbnail\ _20240416_142610_0000.png);
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  animation: appearAnimation 5s forwards;
+
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat;
+}
+
+  .intro{
+    font-size: 40px;
+    animation: appearAnimation 5s forwards;
+    color: white;
+  }
+  @keyframes appearAnimation {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+  .about{
+    font-size: 20px;
+    display: inline-block;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-align: center;
+  }
+
+  .about p{
+    margin: 5px;
+    
+  }
+
+  .qualifications, .concepts{
+    font-size: 20px;
+    display: inline-block;
+  }
+
+.concepts{
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.concepts li{
+  margin-right: 5px;
+  
+}
+  
+ 
+
+
